@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko - Home</title>
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="text-gray-700">
+  
+  <header class="fixed top-0 left-0 w-full shadow text-gray-500 bg-white z-30">
+    <div class="px-2 md:px-10 flex items-center py-1 bg-gray-100 justify-between text-xs md:text-base">
+      <h5 class="text-sm hover:text-green-500 cursor-pointer hidden md:block">Download App</h5>
+      <ul class="flex items-center gap-3 ">
+        <li class="text-sm hover:text-green-500 cursor-pointer">Tentang</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Mitra</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Mulai Berjualan</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Promo</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Toko Care</li>
+      </ul>
+    </div>
+    <div class="px-2 md:px-10 py-3 flex items-center justify-between md:gap-5">
+      <h1 class="hidden md:block text-green-500 font-bold text-2xl">Nama Toko</h1>
+      <button class="hidden md:block px-3 py-1 rounded hover:bg-gray-100 hover:text-green-500 text-sm transition">kategori</button>
+      <form action="#" class="flex items-stretch flex-grow">
+        <input type="text" class="px-3 py-1 flex-grow rounded-l-md focus:outline-none focus:border-green-500 border" placeholder="Cari">
+        <button type="submit" class="bg-gray-100 hover:bg-gray-200 px-1 md:px-3 py-1 rounded-r-md">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </button>
+      </form>
+      <button class="p-1 m-1 rounded-md hover:bg-gray-100 focus:outline-none">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+      </button>
+      <div class="flex items-center gap-1">
+        <button class="px-2 md:px-4 py-1 rounded-lg border-2 font-medium border-green-500 text-green-500">Masuk</button>
+        <button class="px-2 md:px-4 py-1 rounded-lg border-2 font-medium border-green-500 bg-green-500 text-white">Daftar</button>
+      </div>
+    </div>
+    <div class="hidden md:flex justify-between items-center px-10 pb-2">
+      <ul class="flex items-center gap-5 pl-[15.5rem]">
+        <li class="text-sm hover:text-green-500 cursor-pointer">Kulkas</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Sepatu</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Baju</li>
+        <li class="text-sm hover:text-green-500 cursor-pointer">Handphone</li>
+      </ul>
+      <p class="text-sm flex items-center">
+        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        Dikirim ke 
+        <span class="font-bold">Jakarta Pusat</span>
+      </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="px-5 md:px-16 mt-28 md:mt-36">
+
+    <section id="big-image" class="splide w-full h-[22rem] rounded-xl bg-gray-400 overflow-hidden">
+      <div class="splide__track ">
+        <ul class="splide__list ">
+          <li class="splide__slide">
+            <img src="./images/image3.jpg" class="w-full h-full object-cover object-center" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./images/image2.jpg" class="w-full h-full object-cover object-center" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="./images/image3.jpg" class="w-full h-full object-cover object-center" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mt-10 shadow-md rounded-xl px-5 py-8 border-b">
+      <div class="flex flex-col md:flex-row justify-between gap-5">
+
+        <!-- Kategori Pilihan -->
+        <div class="w-full md:w-1/2">
+          <h1 class="text-2xl font-bold mb-5">Ketegori Pilihan</h1>
+          <div id="kategori-pilihan" class="splide w-full">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide h-56 md:h-48">
+                  <div class="flex flex-col justify-center gap-3 border rounded-lg p-5 h-full">
+                    <img src="./images/produk.jpg" class="bg-gray-200 object-cover object-center h-2/3 w-full" alt="">
+                    <div class="text-center">
+                      <h3 class="font-semibold">Fashion</h3>
+                      <p>Sepatu 1</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide h-56 md:h-48">
+                  <div class="flex flex-col justify-center gap-3 border rounded-lg p-5 h-full">
+                    <img src="./images/produk.jpg" class="bg-gray-200 object-cover object-center h-2/3 w-full" alt="">
+                    <div class="text-center">
+                      <h3 class="font-semibold">Fashion</h3>
+                      <p>Sepatu 2</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide h-56 md:h-48">
+                  <div class="flex flex-col justify-center gap-3 border rounded-lg p-5 h-full">
+                    <img src="./images/produk.jpg" class="bg-gray-200 object-cover object-center h-2/3 w-full" alt="">
+                    <div class="text-center">
+                      <h3 class="font-semibold">Fashion</h3>
+                      <p>Sepatu 3</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide h-56 md:h-48">
+                  <div class="flex flex-col justify-center gap-3 border rounded-lg p-5 h-full">
+                    <img src="./images/produk.jpg" class="bg-gray-200 object-cover object-center h-2/3 w-full" alt="">
+                    <div class="text-center">
+                      <h3 class="font-semibold">Fashion</h3>
+                      <p>Sepatu 4</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide h-56 md:h-48">
+                  <div class="flex flex-col justify-center gap-3 border rounded-lg p-5 h-full">
+                    <img src="./images/produk.jpg" class="bg-gray-200 object-cover object-center h-2/3 w-full" alt="">
+                    <div class="text-center">
+                      <h3 class="font-semibold">Fashion</h3>
+                      <p>Sepatu 5</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Up & Tagihan -->
+        <div class="w-full md:w-1/2 mt-5 md:mt-0">
+          <h1 class="text-2xl font-bold mb-5">
+            Top Up & Tagihan 
+            <span class="text-xl text-green-500 ">Lihat Semua</span>
+          </h1>
+          <div class="rounded-md border w-full">
+            <ul class="flex items-center w-full transition text-sm md:text-base">
+              <li class="p-3 border-b-[3px] flex-1 text-center cursor-pointer border-green-500">Pulsa</li>
+              <li class="p-3 border-b-[3px] flex-1 text-center cursor-pointer hover:border-green-500">Paket Data</li>
+              <li class="p-3 border-b-[3px] flex-1 text-center cursor-pointer hover:border-green-500">Listrik PLN</li>
+              <li class="p-3 border-b-[3px] flex-1 text-center cursor-pointer hover:border-green-500">Flight</li>
+            </ul>
+            <form action="#" class="p-4 flex items-end gap-3 text-sm md:text-base">
+              <div class="w-2/5">
+                <label for="nomor_telp" class="block mb-1">Nomor Telepon</label>
+                <input type="text" id="nomor_telp" class="w-full px-3 py-2 border rounded-md focus:outline-none">
+              </div>
+              <div class="w-2/5">
+                <label for="nomor_telp" class="block mb-1">Nomor Telepon</label>
+                <select type="text" id="nomor_telp" class="w-full px-3 py-2 border rounded-md focus:outline-none">
+                  <option selected disabled hidden>Pilih</option>
+                  <option value="1000">1000</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                  <option value="20000">20000</option>
+                  <option value="50000">50000</option>
+                </select>
+              </div>
+              <button class="w-1/5 px-3 py-2 rounded-md font-medium bg-gray-200">Beli</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <ul id="menus" class="splide text-gray-500 mt-8">
+        <div class="splide__track">
+          <ul class="splide__list text-sm md:text-base">
+            <li class="splide__slide border rounded-2xl px-4 py-2">Kategori</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Semua Promo</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Kesehatan</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Makanan & Minuman</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Dapur</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Emas</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Handphone & Tablet</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Elektronik</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Kecantikan</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Fashion Wanita</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Pascabayar</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Tiket Pesawat</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Hotel</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">Official Store</li>
+            <li class="splide__slide border rounded-2xl px-4 py-2">TV Kabel</li>
+          </ul>
+        </div>
+      </ul>
+    </section>
+
+    <!-- Special di Toko hari ini -->
+    <section class="mt-10 border-b border-t py-10">
+      <h1 class="text-2xl font-bold mb-5">Special di Toko hari ini</h1>
+      <div class="flex flex-col md:flex-row items-center h-96 md:h-56 gap-5">
+        <div class="bg-gray-400 h-full w-full md:w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image1.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+        <div class="bg-gray-400 h-full w-full md:w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image2.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+        <div class="bg-gray-400 h-full w-full md:w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image3.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Lagi Trending -->
+    <section class="mt-10 border-b pb-10">
+      <h1 class="text-2xl font-bold mb-5 flex items-baseline">
+        Lagi Trending, nih
+        <span class="text-xl text-green-500 flex items-baseline cursor-pointer">
+          <svg class="w-6 h-6 mx-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          Muat Lainnya
+        </span>
+      </h1>
+      <div class="flex  items-center justify-center w-full flex-wrap">
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/4 p-3 md:h-36">
+          <div class="flex flex-col md:flex-row items-center rounded-md shadow border h-full overflow-hidden">
+            <img src="./images/produk.jpg" class="bg-gray-300 h-full w-full md:w-1/3" alt="">
+            <div class="p-10">
+              <h3 class="text-xl font-semibold mb-2">Sepatu</h3>
+              <p class="text-gray-500 text-sm md:text-base">102rb produk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Official Store -->
+    <section class="mt-10 border-b pb-10">
+      <h1 class="text-2xl font-bold mb-5">Official Store 
+        <span class="text-green-500 text-xl">Lihat Semua</span>
+      </h1>
+      <div class="flex items-center h-56 gap-5">
+        <div class="bg-gray-400 h-full w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image1.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+        <div class="bg-gray-400 h-full w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image2.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+        <div class="bg-gray-400 h-full w-1/3 rounded-xl overflow-hidden">
+          <img src="./images/image3.jpg" class="h-full w-full object-cover object-center" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Bayar di tempat -->
+    <section class="mt-10 border-b pb-10">
+      <h1 class="text-2xl font-bold mb-5">Bayar di tempat < 49rb
+        <span class="text-green-500 text-xl">Lihat Semua</span>
+      </h1>
+      <div id="produk-cod" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </section>
+
+    <!-- Elektronik Pilihan -->
+    <section class="mt-10 border-b pb-10">
+      <h1 class="text-2xl font-bold mb-5">Elektronik Pilihan < 49rb
+        <span class="text-green-500 text-xl">Lihat Semua</span>
+      </h1>
+      <div id="elektronik-pilihan" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="h-96 shadow border rounded-md">
+                <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+                <div class="p-2">
+                  <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+                  <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+                  <div class="flex items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <p>4.7 | Terjual 1000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </section>
+
+
+    <!-- Produk List -->
+    <section class="mt-10 border-t-8 relative">
+
+      <!-- produk category -->
+      <div class="md:sticky top-24 left-0 bg-white pt-10 pb-5">
+        <div id="menus-foryou" class="splide  text-gray-500">
+          <div class="splide__track">
+            <ul class="splide__list text-white">
+              <li class="splide__slide border rounded-2xl bg-red-500 p-2 md:p-3 text-base md:text-lg font-bold">For You</li>
+              <li class="splide__slide border rounded-2xl bg-green-500 p-2 md:p-3 text-base md:text-lg font-bold">Special Hari ini</li>
+              <li class="splide__slide border rounded-2xl bg-yellow-500 p-2 md:p-3 text-base md:text-lg font-bold">Bangga Buatan Indonesia</li>
+              <li class="splide__slide border rounded-2xl bg-purple-500 p-2 md:p-3 text-base md:text-lg font-bold">Jakarta Sneakers Day</li>
+              <li class="splide__slide border rounded-2xl bg-blue-500 p-2 md:p-3 text-base md:text-lg font-bold">Special Diskon</li>
+              <li class="splide__slide border rounded-2xl bg-pink-500 p-2 md:p-3 text-base md:text-lg font-bold">Perlengkapan Ibadah</li>
+              <li class="splide__slide border rounded-2xl bg-red-500 p-2 md:p-3 text-base md:text-lg font-bold">Vitamin & Multivitamin</li>
+              <li class="splide__slide border rounded-2xl bg-green-500 p-2 md:p-3 text-base md:text-lg font-bold">Make up Wajah</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- produk list -->
+      <div class="flex flex-wrap">
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-1/6 p-3">
+          <div class="h-96 shadow border rounded-md">
+            <img src="./images/produk.jpg" class="h-[60%] bg-gray-200 w-full object-cover" alt="">
+            <div class="p-2">
+              <h3 class="mb-1">Sepatu Lorem ipsum, dolor sit amet</h3>
+              <h5 class="text-lg font-bold mb-2">Rp 36.000</h5>
+              <div class="flex items-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p>4.7 | Terjual 1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-full text-center my-8">
+        <button class="w-1/2 md:w-96 py-3 rounded-md border-2 border-green-500 text-green-500 font-bold text-lg md:text-xl">Muat Lebih Banyak</button>
+      </div>
+    </section>
+
+    <section class="mt-20 pb-32">
+      <h1 class="text-2xl font-bold mb-5">Cari Semua di Toko</h1>
+      <ul id="produk_toko" class="splide text-gray-500 mt-8">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide border-b-4 text-green-500 border-green-500 p-4 font-semibold cursor-pointer">Semua Promo</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Kesehatan</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Makanan & Minuman</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Dapur</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Emas</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Handphone & Tablet</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Elektronik</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Kecantikan</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Fashion Wanita</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Pascabayar</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Tiket Pesawat</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Hotel</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">Official Store</li>
+            <li class="splide__slide border-b-4 text-gray-400 hover:text-gray-700 p-4 font-semibold cursor-pointer">TV Kabel</li>
+          </ul>
+        </div>
+      </ul>
+      <div class="flex flex-wrap px-2 py-4 text-gray-400 text-sm">
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Bebas Ongkir</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Waktu Indonesia Belanja</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Waktu Indonesia Belanja TV Show</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Kejar Diskon</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Flash Sale</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Promo Pengguna Baru</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Bangga Buatan Indonesia</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Toko Nyam</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Supermarket Week</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Tap Tap Kotak</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Home Living Selebration</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Super Gadget Day</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Semasa</a>
+        <a href="#" class="w-1/2 md:w-1/4 px-3 py-2 border-b hover:text-green-500">Kolaborasi Anak Bangsa</a>
+      </div>
+      <div class="border-b-2 border-dashed py-5 flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-yellow-500 text-lg font-bold mb-5">Punya Toko Online? Buka cabangnya di Toko</h2>
+          <p class="text-gray-500 mb-5">Mudah, nyaman dan bebas komisi transaksi. <span class="font-bold">GRATIS!</span></p>
+          <div>
+            <button class="px-4 py-2 font-semibold rounded-md bg-green-500 text-white">Buka Toko Gratis</button>
+            <a href="#" class="text-green-500 ml-2 font-semibold">Pelajari lebih lanjut</a>
+          </div>
+        </div>
+        <img src="./images/image3.jpg" class="w-full md:w-1/3 h-32 overflow-hidden object-cover" alt="">
+      </div>
+      <div class="text-gray-500 my-8">
+        <h4 class="font-bold mb-3">Nikmati Mudahnya Jualan Online di Toko</h4>
+        <p class="text-sm mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum labore earum incidunt iure sapiente, recusandae perspiciatis expedita, voluptatum laborum harum illum a, doloribus amet architecto aspernatur! Placeat atque tempore delectus ad labore sapiente ipsum, debitis illum fugiat! Sapiente quas voluptatem fugiat exercitationem pariatur incidunt illum, assumenda molestias tenetur ipsa quod et laudantium dolorem animi harum impedit sequi reiciendis eius atque doloribus corporis repudiandae voluptates alias aperiam? Sunt, vel repellat. Eaque veritatis, voluptatum minus iure asperiores sunt assumenda ea. Excepturi necessitatibus voluptates consectetur voluptatem, placeat tempora illo ratione, perspiciatis voluptas itaque tenetur repellendus, atque quam vitae nam vero praesentium autem! Eius?</p>
+        <p class="text-sm mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos labore minus debitis officia laboriosam cumque quidem itaque ad nihil! Sunt nobis excepturi dolor facere debitis neque, mollitia nam error et hic est, quia itaque blanditiis doloribus voluptas adipisci quod. Labore, iusto minus. Quisquam atque officia recusandae repudiandae minus. Nemo, eos provident hic, cum repellendus architecto odio voluptas aut atque similique quia placeat debitis nihil, asperiores repudiandae sapiente et eaque quidem suscipit. Rerum cumque, neque ipsam quas maxime officia doloribus et!</p>
+        <a href="#" class="text-green-500 hover:underline text-sm font-bold">Selengkapnya..</a>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-5">
+        <div class="w-full md:w-1/3 flex items-center cursor-pointer group">
+          <img src="./images/image2.jpg" class="h-full w-[36%] object-cover" alt="">
+          <div class="p-3">
+            <h3 class="text-green-500 font-bold mb-3 group-hover:text-yellow-500">Transparan</h3>
+            <p class="text-sm text-gray-500">Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 flex items-center cursor-pointer group">
+          <img src="./images/image3.jpg" class="h-full w-[36%] object-cover" alt="">
+          <div class="p-3">
+            <h3 class="text-green-500 font-bold mb-3 group-hover:text-yellow-500">Aman</h3>
+            <p class="text-sm text-gray-500">Bandingkan review untuk berbagai online shop terpercaya se-Indonesia</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 flex items-center cursor-pointer group">
+          <img src="./images/image2.jpg" class="h-full w-[36%] object-cover" alt="">
+          <div class="p-3">
+            <h3 class="text-green-500 font-bold mb-3 group-hover:text-yellow-500">Fasilitas Escrow Gratis</h3>
+            <p class="text-sm text-gray-500">Fasilitas Escrow (Rekening Bersama) Toko tidak dikenakan biaya tambahan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col md:flex-row justify-between gap-10 border-t p-10 md:p-20 md:pt-10 md:pb-32">
+    <div class="flex flex-col md:flex-row gap-10 pt-10">
+      <div>
+        <h3 class="font-bold mb-2">Toko</h3>
+        <ul class="flex flex-col gap-3 text-sm text-gray-500">
+          <li>Tentang Toko</li>
+          <li>Hak Kekayaan Intelektual</li>
+          <li>Karir</li>
+          <li>Blog</li>
+          <li>Bridestory</li>
+          <li>Toko Parents</li>
+          <li>Mitra Blog</li>
+          <li>TokoPoints</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mb-3">
+          <h3 class="font-bold mb-2">Beli</h3>
+          <ul class="flex flex-col gap-3 text-sm text-gray-500">
+            <li>Tagihan & Top Up</li>
+            <li>Tukar Tambah Handphone</li>
+            <li>Toko COD</li>
+            <li>TokoPoints</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Jual</h3>
+          <ul class="flex flex-col gap-3 text-sm text-gray-500">
+            <li>Pusat Edukasi Selller</li>
+            <li>Mitra Toppers</li>
+            <li>Daftar Official Store</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="mb-3">
+          <h3 class="font-bold mb-2">Bantuan dan Panduan</h3>
+          <ul class="flex flex-col gap-3 text-sm text-gray-500">
+            <li>Tentang Toko</li>
+            <li>Syarat dan Ketentuan</li>
+            <li>Kebijakan Privasi</li>
+          </ul>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-bold mb-2">Keamanan</h3>
+          <ul class="flex flex-col gap-3 text-sm text-gray-500">
+            <li>Keamanan Akun</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Ikuti Kami</h3>
+          <ul class="flex items-center gap-5 ">
+            <li class="filter hover:brightness-125 cursor-pointer">
+              <img src="./images/logos/Facebook.svg" class="w-6 h-6" alt="">
+            </li>
+            <li class="filter hover:brightness-125 cursor-pointer">
+              <img src="./images/logos/Instagram.svg" class="w-6 h-6" alt="">
+            </li>
+            <li class="filter hover:brightness-125 cursor-pointer">
+              <img src="./images/logos/Twitter.svg" class="w-6 h-6" alt="">
+            </li>
+            <li class="filter hover:brightness-125 cursor-pointer">
+              <img src="./images/logos/Pinterest.svg" class="w-6 h-6" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-[40%] flex flex-col justify-center items-center">
+      <img src="./images/image3.jpg" class="w-full h-48"  alt="">
+      <div class="flex items-center gap-3 justify-center py-5">
+        <button class="focus:outline-none">
+          <img src="./images/googleplay.png" class="h-12" alt="">
+        </button>
+        <button class="focus:outline-none">
+          <img src="./images/app_store.png" class="h-12" alt="">
+        </button>
+      </div>
+      <p>&copy; 2020 - 2021, PT.Toko</p>
+      <div class="mt-5 p-1 bg-gray-100 rounded-md">
+        <button class="px-4 focus:outline-none font-bold rounded-md text-white bg-green-500">
+          Indonesia
+        </button>
+        <button class="px-4 focus:outline-none font-bold text-gray-500 rounded-md">
+          English
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

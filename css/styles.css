@@ -1,0 +1,17 @@
+.splide__arrow {
+  background: #fff !important;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.splide__arrow--prev {
+  margin-left: -30px !important;
+}
+.splide__arrow--next {
+  margin-right: -30px !important;
+}
+
+#big-image .splide__arrow--prev {
+  margin-left: 0px !important;
+}
+#big-image .splide__arrow--next {
+  margin-right: 0px !important;
+}
